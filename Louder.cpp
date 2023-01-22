@@ -20,7 +20,7 @@ void Louder::process(list<string> argv) {
 			Chunk c = r.readChunk();
 			if (secs >= interval.start && secs <= interval.end) {
 				for (size_t i = 0; i < c.size; i++) {
-					c.chunk[i] += loud;
+					c.chunk[i] *= loud;
 				}
 			}
 			w.writeChunk(c);
