@@ -2,7 +2,7 @@
 
 Writer::Writer(const char* filename, const char* fileHeader) {
 	fopen_s(&file, filename, "w");
-	fwrite(fileHeader, 1, 44, file);
+	fwrite(fileHeader, 1, 488, file);
 }
 
 Writer::~Writer() {

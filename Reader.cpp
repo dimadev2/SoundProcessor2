@@ -2,7 +2,7 @@
 
 Reader::Reader(const char* filename) {
 	fopen_s(&file, filename, "r");
-	fread(fileHeader, 1, 44, file);
+	fread(fileHeader, 1, 488, file);
 }
 
 Reader::~Reader() {

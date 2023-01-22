@@ -18,5 +18,5 @@ public:
 
 	Chunk readChunk();
 private:
-	char fileHeader[44];
+	char fileHeader[488];
 };
